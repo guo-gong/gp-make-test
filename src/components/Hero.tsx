@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -16,17 +17,22 @@ const Hero = () => {
         <div style={styles.imageContainer}>
           <div style={styles.imageWrapper}>
             <div style={styles.portraitOne}>
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=400&h=400" 
                 alt="AI Portrait 1" 
                 style={styles.image}
+                width={380}
+                height={380}
+                priority
               />
             </div>
             <div style={styles.portraitTwo}>
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400" 
                 alt="AI Portrait 2" 
                 style={styles.image}
+                width={380}
+                height={380}
               />
             </div>
           </div>
