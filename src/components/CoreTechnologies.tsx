@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Cpu, Shield, Sliders } from 'lucide-react';
 import TechCard from './TechCard';
