@@ -20,7 +20,7 @@ const Navbar = () => {
 
 const styles = {
   navbar: {
-    height: '80px',
+    height: '100px',
     display: 'flex',
     alignItems: 'center',
     backgroundColor: 'transparent',
@@ -32,9 +32,10 @@ const styles = {
     width: '100%',
   },
   logo: {
-    fontSize: '1.5rem',
+    fontSize: '1.35rem',
     fontWeight: '700',
     color: 'var(--text-primary)',
+    letterSpacing: '-0.01em',
   },
   navLinks: {
     display: 'flex',
@@ -42,12 +43,13 @@ const styles = {
     gap: '2.5rem',
   },
   link: {
-    fontSize: '0.95rem',
+    fontSize: '0.9rem',
     fontWeight: '500',
     color: 'var(--text-primary)',
   },
   button: {
-    marginLeft: '1rem',
+    marginLeft: '0.5rem',
+    padding: '0.75rem 1.4rem',
   }
 } as const;
 

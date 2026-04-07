@@ -18,33 +18,36 @@ const CTA = () => {
 
 const styles = {
   section: {
-    padding: '4rem 0',
+    padding: '4rem 0 8rem 0',
   },
   banner: {
     backgroundColor: 'var(--cta-bg)',
     borderRadius: '24px',
-    padding: '5rem 2rem',
+    padding: '6rem 2rem',
     textAlign: 'center' as const,
     color: 'white',
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'center',
-    boxShadow: '0 20px 40px rgba(0,0,0,0.2)',
   },
   title: {
-    fontSize: '2.5rem',
-    marginBottom: '1rem',
+    fontSize: '2.4rem',
+    marginBottom: '1.5rem',
     color: 'white',
+    letterSpacing: '-0.01em',
   },
   subtitle: {
-    fontSize: '1.1rem',
-    color: 'rgba(255, 255, 255, 0.8)',
-    marginBottom: '2.5rem',
+    fontSize: '1.05rem',
+    color: 'rgba(255, 255, 255, 0.7)',
+    marginBottom: '3rem',
     maxWidth: '600px',
+    lineHeight: '1.5',
   },
   button: {
-    padding: '1rem 2.5rem',
-    fontSize: '1.1rem',
+    padding: '0.9rem 2.2rem',
+    fontSize: '1rem',
+    backgroundColor: 'var(--accent-teal)',
+    borderRadius: '8px',
   }
 } as const;
 

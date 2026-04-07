@@ -19,10 +19,11 @@ const Footer = () => {
 
 const styles = {
   footer: {
-    padding: '2rem 0',
-    borderTop: '1px solid rgba(0,0,0,0.05)',
+    padding: '2.5rem 0',
+    borderTop: '1px solid rgba(0,0,0,0.06)',
     color: 'var(--text-secondary)',
-    fontSize: '0.875rem',
+    fontSize: '0.82rem',
+    opacity: 0.8,
   },
   container: {
     display: 'flex',
@@ -31,14 +32,14 @@ const styles = {
   },
   links: {
     display: 'flex',
-    gap: '1.5rem',
+    gap: '2.5rem',
   },
   link: {
     color: 'var(--text-secondary)',
     transition: 'color 0.2s ease',
   },
   copyright: {
-    opacity: 0.8,
+    fontWeight: '400',
   }
 } as const;
 

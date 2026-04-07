@@ -19,7 +19,7 @@ const Hero = () => {
             <div style={styles.portraitOne}>
               <Image 
                 src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=400&h=400" 
-                alt="AI Portrait 1" 
+                alt="AI Specialist 1" 
                 style={styles.image}
                 width={380}
                 height={380}
@@ -29,7 +29,7 @@ const Hero = () => {
             <div style={styles.portraitTwo}>
               <Image 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400" 
-                alt="AI Portrait 2" 
+                alt="AI Specialist 2" 
                 style={styles.image}
                 width={380}
                 height={380}
@@ -44,8 +44,8 @@ const Hero = () => {
 
 const styles = {
   hero: {
-    paddingTop: '4rem',
-    paddingBottom: '6rem',
+    paddingTop: '3rem',
+    paddingBottom: '5rem',
     textAlign: 'center' as const,
   },
   container: {
@@ -54,33 +54,36 @@ const styles = {
     alignItems: 'center',
   },
   content: {
-    maxWidth: '800px',
-    marginBottom: '4rem',
+    maxWidth: '850px',
+    marginBottom: '4.5rem',
   },
   title: {
-    fontSize: '3.5rem',
-    marginBottom: '1.5rem',
+    fontSize: '3.6rem',
+    marginBottom: '2rem',
     color: 'var(--text-primary)',
-    letterSpacing: '-0.02em',
+    letterSpacing: '-0.025em',
+    lineHeight: '1.05',
   },
   subtitle: {
-    fontSize: '1.25rem',
+    fontSize: '1.15rem',
     color: 'var(--text-secondary)',
-    maxWidth: '600px',
+    maxWidth: '620px',
     margin: '0 auto',
+    lineHeight: '1.5',
+    opacity: 0.85,
   },
   imageContainer: {
     width: '100%',
     maxWidth: '1000px',
-    height: '500px',
-    backgroundColor: '#FAF9F6',
+    height: '480px',
+    backgroundColor: 'var(--bg-hero)',
     borderRadius: '40px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     position: 'relative' as const,
-    boxShadow: '0 20px 50px rgba(0, 0, 0, 0.03)',
-    marginTop: '2rem',
+    marginTop: '1rem',
+    overflow: 'hidden',
   },
   imageWrapper: {
     position: 'relative' as const,
@@ -91,34 +94,34 @@ const styles = {
     alignItems: 'center',
   },
   portraitOne: {
-    width: '380px',
-    height: '380px',
+    width: '320px',
+    height: '320px',
     borderRadius: '45% 55% 50% 50% / 40% 40% 60% 60%',
     overflow: 'hidden',
-    border: '12px solid white',
-    position: 'absolute' as const,
-    left: '20%',
+    border: '10px solid white',
     zIndex: 1,
-    transform: 'translateX(0%)',
     boxShadow: '0 15px 35px rgba(0,0,0,0.08)',
+    transform: 'rotate(-5deg) translate(20px, -10px)',
+    position: 'absolute' as const,
+    left: '25%',
   },
   portraitTwo: {
-    width: '380px',
-    height: '380px',
+    width: '320px',
+    height: '320px',
     borderRadius: '55% 45% 50% 50% / 40% 40% 60% 60%',
     overflow: 'hidden',
-    border: '12px solid white',
-    position: 'absolute' as const,
-    right: '20%',
+    border: '10px solid white',
     zIndex: 2,
-    transform: 'translateX(0%)',
     boxShadow: '0 15px 35px rgba(0,0,0,0.08)',
+    transform: 'rotate(5deg) translate(-20px, 10px)',
+    position: 'absolute' as const,
+    right: '25%',
   },
   image: {
     width: '100%',
     height: '100%',
     objectFit: 'cover' as const,
-    filter: 'grayscale(30%) contrast(1.1)',
+    filter: 'grayscale(100%) contrast(1.1)',
   }
 } as const;
 

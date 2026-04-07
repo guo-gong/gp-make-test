@@ -5,19 +5,19 @@ import TechCard from './TechCard';
 const CoreTechnologies = () => {
   const techs = [
     {
-      icon: <Cpu size={32} />,
+      icon: <Cpu size={28} />,
       title: 'Advanced AI Core',
       description: 'Our robots are powered by a proprietary AI engine, enabling real-time decision-making and adaptive learning.',
       iconBg: '#3d8b8b',
     },
     {
-      icon: <Shield size={32} />,
+      icon: <Shield size={28} />,
       title: 'Unmatched Durability',
       description: 'Built with high-grade materials and rigorous testing to ensure reliable operation in the most demanding environments.',
       iconBg: '#e67e22',
     },
     {
-      icon: <Sliders size={32} />,
+      icon: <Sliders size={28} />,
       title: 'Modular & Scalable',
       description: 'Easily customize and upgrade your robotic fleet with our modular components to meet evolving business needs.',
       iconBg: '#8e9e3e',
@@ -40,19 +40,20 @@ const CoreTechnologies = () => {
 
 const styles = {
   section: {
-    padding: '6rem 0',
+    padding: '8rem 0',
   },
   heading: {
     textAlign: 'center' as const,
-    fontSize: '2.5rem',
-    marginBottom: '5rem',
+    fontSize: '2.2rem',
+    marginBottom: '4rem',
     color: 'var(--text-primary)',
     fontWeight: '700',
+    letterSpacing: '-0.01em',
   },
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-    gap: '2rem',
+    gap: '1.5rem',
   },
 } as const;
 
